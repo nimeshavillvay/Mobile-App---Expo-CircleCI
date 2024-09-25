@@ -1,0 +1,13 @@
+.next
+.expo
+.tsup
+next-env.d.ts
+pnpm-lock.yaml
+
+.pnpm-store
+
+# Mobile
+ios
+android
+
+coverage

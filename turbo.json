@@ -1,0 +1,60 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "globalDependencies": ["**/.env.*local"],
+  "globalEnv": [
+    "NODE_ENV",
+    "EXPO_USE_METRO_WORKSPACE_ROOT",
+    "ENVIRONMENT",
+    "VERCEL_ENV",
+    "VERCEL_PROJECT_PRODUCTION_URL",
+    "NEXT_PUBLIC_WURTH_LAC_API",
+    "NEXT_PUBLIC_WURTH_LAC_SEARCH_API",
+    "NEXT_PUBLIC_WURTH_LAC_API_KEY",
+    "NEXT_PUBLIC_WURTH_LAC_SNAPPAY_URL",
+    "NEXT_PUBLIC_WURTH_LAC_RECAPTCHA_SITE_KEY",
+    "NEXT_PUBLIC_WURTH_LAC_GTM_KEY",
+    "EXPO_PUBLIC_WURTH_LAC_API",
+    "EXPO_PUBLIC_WURTH_LAC_API_KEY",
+    "EXPO_PUBLIC_WURTH_LAC_SEARCH_API",
+    "EXPO_PUBLIC_WURTH_LAC_DOMAIN",
+    "NEXT_PUBLIC_WURTH_ENABLE_RECAPTCHA"
+  ],
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "android": {
+      "cache": false,
+      "persistent": true
+    },
+    "ios": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build", "lint", "test"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "node_modules/.cache/metro/**",
+        "storybook-static/**"
+      ]
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "test": {
+      "dependsOn": ["^test"]
+    },
+    "types": {
+      "dependsOn": ["^types"]
+    }
+  }
+}

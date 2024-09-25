@@ -1,0 +1,14 @@
+node_modules
+.env.local
+.turbo
+.DS_Store
+storybook-static
+dist
+.prettier
+.tamagui
+tsconfig.tsbuildinfo
+
+# Mobile
+*.apk
+*.ipa
+*.tar.gz

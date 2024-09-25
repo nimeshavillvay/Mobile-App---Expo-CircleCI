@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    "moduleResolution": "bundler",
+    "module": "preserve",
+    "noEmit": true,
+
+    "types": ["node", "react"],
+    "lib": ["dom", "esnext"],
+
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*", "../shared-logic/src/*"]
+    },
+
+    "rootDir": "."
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "jest.config.ts", "jest.setup.ts"],
+  "exclude": ["node_modules"]
+}

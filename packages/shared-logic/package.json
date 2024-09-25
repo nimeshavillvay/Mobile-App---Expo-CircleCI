@@ -1,0 +1,50 @@
+{
+  "name": "@repo/shared-logic",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./apis/*": {
+      "import": "./src/apis/*.ts"
+    },
+    "./models/*": {
+      "import": "./src/lib/models/*.ts"
+    },
+    "./zod-schema/*": {
+      "import": "./src/lib/zod-schema/*.ts"
+    },
+    "./constants": {
+      "import": "./src/lib/constants.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@tanstack/react-query": "^5.49.2",
+    "@total-typescript/ts-reset": "0.5.1",
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "client-only": "0.0.1",
+    "eslint": "8.57.0",
+    "html-entities": "^2.5.2",
+    "ky": "^1.4.0",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "server-only": "0.0.1",
+    "typescript": "^5.5.3",
+    "zod": "^3.23.8"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.49.2",
+    "client-only": "0.0.1",
+    "html-entities": "^2.5.2",
+    "ky": "^1.4.0",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "server-only": "0.0.1",
+    "zod": "^3.23.8"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "extends": "@repo/typescript-config/expo.json",
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./components/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/mocks/*": ["./mocks/*"],
+      "~/*": [
+        "../../packages/native-ui/src/*",
+        "../../packages/shared-logic/src/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "reset.d.ts",
+    "global-error-registration.d.ts"
+  ]
+}
