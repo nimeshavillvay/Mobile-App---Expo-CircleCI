@@ -59,7 +59,7 @@ const config: ExpoConfig = {
   owner: "wurth-louis",
   extra: {
     eas: {
-      projectId: "87690a65-51ba-4b7d-878a-8a68f5d7c285",
+      projectId: "efdab9ef-df32-4334-bf22-81f690f9f083",
     },
   },
 };
