@@ -13,7 +13,7 @@ Object.entries(process.env)
 
 const config: ExpoConfig = {
   name: "Wurth LAC",
-  slug: "wurth-lac",
+  slug: "mobile-app-cicleci-expo",
   version: "1.0.0",
   orientation: "portrait",
   icon: "./assets/icon.png",
