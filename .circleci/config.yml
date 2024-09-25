@@ -75,7 +75,7 @@ jobs:
             echo "$WBS_TEST_FILES" | circleci tests run --command="xargs pnpm test --filter wbs-web" --
           environment:
             TURBO_UI: "false"
-            # Disabling the UI can make the logs cleaner and more readable, also improves performance  #new2
+            # Disabling the UI can make the logs cleaner and more readable, also improves performance  #new3
 
 workflows:
   version: 2
