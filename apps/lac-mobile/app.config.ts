@@ -56,7 +56,7 @@ const config: ExpoConfig = {
   web: {
     favicon: "./assets/favicon.png",
   },
-  owner: "wurth-louis",
+  owner: "nimeshaweerasinghe94",
   extra: {
     eas: {
       projectId: "efdab9ef-df32-4334-bf22-81f690f9f083",
