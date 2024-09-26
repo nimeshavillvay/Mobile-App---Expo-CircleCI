@@ -28,7 +28,9 @@
         "ENVIRONMENT": "qa"
       },
       "android": {
-        "image": "latest"
+        "image": "latest",
+        "distribution": "store",
+        "withoutCredentials": false
       },
       "ios": {
         "image": "latest"
