@@ -91,7 +91,8 @@ jobs:
       #Use the Build URL in Subsequent Steps
       - run:
           name: Use the Expo Build URL
-          command: echo "Expo Build URL: $BUILD_URL"
+          command: |
+          echo "Expo Build URL: $BUILD_URL"
 
 
 workflows:
